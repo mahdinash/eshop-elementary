@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <style>
+        .mySlides {display:none;}
+    </style>
+    <title></title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">صفحه اصلی</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">درباره ما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="#">مینا شاپ</a>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 my-3">
+            <figure class="figure">
+                <img src="images/banner.jpg" class="figure-img img-fluid rounded" alt="...">
+            </figure>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/1.jpg">
+        </div>
+        <div class="col-lg-6">
+            <h4>ریمل اسنس صورتی</h4>
+            <p>
+                پرفروش ترین ریمل موجود در بازار
+<br>
+                البته شارژ مجدد این سری کیفیتش با تمام کارای توی بازار متفاوت هست میتونم به جرات بگم با اصلیش هیچ تفاوتی نداره
+                <br />
+                ریمل اسنس صورتی
+                <br />
+                حجم دهنده و برپشت کننده مژه
+               <br />
+                مواد عالی و خرده مژه دار
+                <br />
+                کاملا ضدآب بدون پخش سیاهی
+            </p>
+            <button class="btn btn-danger">افزودن به سبد خرید</button>
+        </div>
+
+        <hr>
+    </div>
+</div>
+
+</body>
+<footer class="bg-dark py-5">
+    <p align="center" class="text-white">طراحی و راه اندازی </p>
+</footer>
+<script type="text/javascript" href="js/bootstrap.js">
+</script>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+</html>
